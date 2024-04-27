@@ -1,9 +1,22 @@
-.logonavbar{
+.logonavbar {
     height: 50px;
     width: 65px;
-    
 
 }
+
+main{
+    width: 100%;
+}
+
+.fondo{
+    display: inline-block;
+    background-color: #3ce;
+    height: 80%;
+}
+.fondo--imagen{
+    
+}
+
 
 footer {
     background-color: #333;
@@ -13,8 +26,4 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-}
-
-.mt{
-    margin-top: 100px;
 }
