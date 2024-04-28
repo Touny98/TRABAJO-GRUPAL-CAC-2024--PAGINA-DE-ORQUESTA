@@ -1,21 +1,40 @@
+body, div{
+    box-sizing: border-box;
+}
+
 .logonavbar {
     height: 50px;
     width: 65px;
 
 }
 
-main{
-    width: 100%;
+
+.fondo {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
-.fondo{
-    display: inline-block;
-    background-color: #3ce;
-    height: 80%;
+.fondo--imagen {
+    margin-top: 50px;
 }
-.fondo--imagen{
-    
+
+#foto-conciento{
+    height: auto;
+    width: 50%;
+
 }
+
+#texto-fondo{
+    margin-top: 50px;
+    text-align: center;
+    background-color: red;
+    flex-basis: 600px;
+    height: 100px;
+}
+
 
 
 footer {
