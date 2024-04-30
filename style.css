@@ -19,7 +19,10 @@ body, div{
 }
 
 #foto-conciento{
-    padding-top: 50px;
+    padding: 10px;
+    border-radius: 10%;
+    width: 100%;
+    height: 50%;
 
 
 }
@@ -34,6 +37,11 @@ body, div{
     text-align: justify;
 }
 
+.profes-item{
+    border-radius: 7%;
+    width: 20%;
+    margin: 20px;
+}
 
 
 footer {
