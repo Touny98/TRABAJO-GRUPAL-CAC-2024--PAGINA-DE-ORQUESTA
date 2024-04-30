@@ -1,5 +1,6 @@
 body, div{
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logonavbar {
@@ -10,29 +11,27 @@ body, div{
 
 
 .fondo {
-    background-color: aqua;
+    background-color: #212529;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
 }
 
-.fondo--imagen {
-    margin-top: 50px;
-}
-
 #foto-conciento{
-    height: auto;
-    width: 50%;
+    padding-top: 50px;
+
 
 }
 
 #texto-fondo{
-    margin-top: 50px;
-    text-align: center;
-    background-color: red;
-    flex-basis: 600px;
-    height: 100px;
+    color: #ffc;
+    font-size: 20px;
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    margin: 0% ;
+    text-align: justify;
 }
 
 
