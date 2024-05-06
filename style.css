@@ -1,5 +1,10 @@
-body,
-div {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,13 +20,15 @@ div {
     display: flex;
     flex-wrap: wrap;
 
+
 }
 
 #foto-conciento {
-    padding: 10px;
-    border-radius: 10%;
-    width: 100%;
-    height: 50%;
+    padding: 50px 0;
+    /* border-radius: 50%; */
+    margin: auto;
+    /* width: 300px;
+    height: 300px; */
 
 
 }
@@ -36,25 +43,44 @@ div {
     text-align: justify;
 }
 
+
+.staff {
+    position: relative;
+}
+
 h2 {
     background-color: burlywood;
     margin: 0;
     padding: 0;
 }
 
-.profes {
+.profes{
     display: flex;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 5px 5px;
+    background-color: aqua;
 }
 
-.profes-item {
+.relleno{
+    background-image: url(./img/NicoG.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+.relleno2{
+    background-image: url(./img/NoeliaG.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+
+/*.profes-item {
     border-radius: 7%;
     width: 300px;
 }
-
 .profes-item:hover {
     opacity: 0.07;
     -webkit-transition: opacity 500ms;
@@ -62,7 +88,7 @@ h2 {
     -o-transition: opacity 500ms;
     -ms-transition: opacity 500ms;
     transition: opacity 500ms;
-}
+} */
 
 
 footer {
@@ -73,4 +99,5 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+    margin: 0;
 }
