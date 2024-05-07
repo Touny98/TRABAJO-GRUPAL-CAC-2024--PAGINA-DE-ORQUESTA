@@ -54,23 +54,24 @@ h2 {
     padding: 0;
 }
 
-.profes{
+.profes {
     display: flex;
     width: 100vw;
     height: 100vh;
-    
+
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: aqua;
 }
 
-.relleno{
+.relleno {
     background-image: url(./img/NicoG.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
 }
-.relleno2{
+
+.relleno2 {
     background-image: url(./img/NoeliaG.jpg);
     width: 300px;
     height: 200px;
@@ -91,6 +92,64 @@ h2 {
 } */
 
 
+
+.mt {
+    margin-top: 100px;
+}
+
+.eventos_page {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.invisible_container {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+    grid-template-areas: "a1 a2 a3";
+    grid-area: main;
+    ;
+}
+
+.eventos_container {
+    grid-area: a2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.eventos_container h1,
+h2 {
+    color: #E66F18;
+}
+
+.eventos_container p {
+    color: #1e1e1e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.eventos_container ul {
+    /* display: flex;*/
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.eventos_container ul li {
+    color: #1e1e1e;
+}
+
+.eventos_container ul li:hover {
+    color: #E66F18
+}
+
+
 footer {
     background-color: #182BAD;
     color: #DEE0E0;
@@ -99,5 +158,14 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    margin: 0;
 }
+
+/*COLORES A USAR
+                #E66F18 Naranja
+                #182BAD Azul intenso
+                #1E1E1E Negro
+                #484F7A Gris azulado
+                #DEE0E0 Blanco
+                #AD9F9A Lila grisaceo
+                
+                */
