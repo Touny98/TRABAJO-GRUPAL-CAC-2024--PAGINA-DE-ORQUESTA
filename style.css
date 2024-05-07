@@ -48,8 +48,7 @@ body {
     position: relative;
 }
 
-h2 {
-    background-color: burlywood;
+h2{
     margin: 0;
     padding: 0;
 }
@@ -61,14 +60,17 @@ h2 {
 
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: aqua;
+    background-color: #AD9F9A;
+    /*backdrop-filter: blur(10px);*/
 }
 
 .relleno {
     background-image: url(./img/NicoG.jpg);
     width: 300px;
     height: 200px;
+    width: 300px;
     background-size: cover;
+
 }
 
 .relleno2 {
@@ -78,19 +80,21 @@ h2 {
     background-size: cover;
 }
 
-/*.profes-item {
+.profes-item {
     border-radius: 7%;
     width: 300px;
 }
-.profes-item:hover {
+.relleno:hover {
     opacity: 0.07;
     -webkit-transition: opacity 500ms;
     -moz-transition: opacity 500ms;
     -o-transition: opacity 500ms;
     -ms-transition: opacity 500ms;
     transition: opacity 500ms;
-} */
-
+}
+.parrafo:hover {
+    opacity: 0;
+}
 
 
 .mt {
@@ -109,7 +113,7 @@ h2 {
 
 .invisible_container {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
+    grid-template-columns: 5% 90% 5%;
     grid-template-rows: 100%;
     grid-template-areas: "a1 a2 a3";
     grid-area: main;
@@ -136,9 +140,12 @@ h2 {
 }
 
 .eventos_container ul {
-    /* display: flex;*/
+    display: flex;
     list-style-type: none;
     font-weight: 600;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .eventos_container ul li {
@@ -149,8 +156,16 @@ h2 {
     color: #E66F18
 }
 
+.evento{
+    max-width: 30%;
+}
+.evento>img{
+max-width: 100%;
+margin-top: 20px;
+}
 
-footer {
+
+footer{
     background-color: #182BAD;
     color: #DEE0E0;
     text-align: center;
@@ -158,6 +173,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
+
 }
 
 /*COLORES A USAR
@@ -166,6 +182,6 @@ footer {
                 #1E1E1E Negro
                 #484F7A Gris azulado
                 #DEE0E0 Blanco
-                #AD9F9A Lila grisaceo
+                #AD9F9A Lila
                 
                 */
