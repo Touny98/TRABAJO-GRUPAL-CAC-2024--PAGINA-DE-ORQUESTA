@@ -47,6 +47,12 @@ body {
 .staff {
     position: relative;
 }
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #E66F18;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 h2 {
     margin: 0;
@@ -104,7 +110,24 @@ h2 {
 
 .mt {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
+.ini__fondo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ini__foto {
+    padding: 10px;
+}
+.ini__frase {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #AD9F9A;
+}
+
 
 .eventos_page {
     display: grid;
@@ -181,6 +204,7 @@ footer {
     bottom: 0;
 
 }
+
 
 /*COLORES A USAR
                 #E66F18 Naranja
