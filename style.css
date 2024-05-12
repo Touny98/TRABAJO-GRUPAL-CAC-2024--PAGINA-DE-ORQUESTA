@@ -6,7 +6,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 50px;
+    /* margin: 50px; */
 }
 
 .logonavbar {
@@ -16,31 +16,32 @@ body {
 }
 
 
-.fondo {
+.Norquesta {
     background-color: #212529;
+    /* width: 100vw; */
+    /* position: relative; */
+}
+
+.Nfondo{
     display: flex;
     flex-wrap: wrap;
-
-
+    width: 100%;
+    padding: 20px;
+    /* margin: 20px; */
+    justify-content: space-between;
 }
 
-#foto-conciento {
-    padding: 50px 0;
-    /* border-radius: 50%; */
+#Nfondo__imagen{
+    padding-top: 50px;
+    border-radius: 20px 20px 20px 20px;
     margin: auto;
-    /* width: 300px;
-    height: 300px; */
-
-
+    background-size: cover;
 }
 
-#texto-fondo {
+#Nfondo__text{
     color: #ffc;
     font-size: 20px;
-    width: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    margin: 0%;
+    padding: 10px;
     text-align: justify;
 }
 
@@ -58,10 +59,11 @@ h2 {
 .Nprofes {
     display: flex;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px 10px;
 
     /*backdrop-filter: blur(10px);*/
 }
