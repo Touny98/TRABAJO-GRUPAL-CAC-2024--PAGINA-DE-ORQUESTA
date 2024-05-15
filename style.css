@@ -22,23 +22,31 @@ body {
     /* position: relative; */
 }
 
-.Nfondo{
+.Nfondo {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
     /* margin: 20px; */
     justify-content: space-between;
 }
 
-#Nfondo__imagen{
+#Nfondo__imagen {
+    width: 96%;
+    max-width: 960px;
     padding-top: 50px;
     border-radius: 20px 20px 20px 20px;
-    margin: auto;
+    margin: 0 auto;
     background-size: cover;
 }
 
-#Nfondo__text{
+.imgConcierto {
+    width: 100%;
+    height: auto;
+
+}
+
+#Nfondo__text {
     color: #ffc;
     font-size: 20px;
     padding: 10px;
@@ -49,12 +57,13 @@ body {
 .staff {
     position: relative;
     background-color: #AD9F9A;
+    padding: 0 20px 50px 0;
 }
 
 h2 {
     margin: 0;
     padding: 0;
-}   
+}
 
 .Nprofes {
     display: flex;
@@ -76,7 +85,6 @@ h2 {
     margin: 0 20px;
     background-size: cover;
     border-radius: 3%;
-
 }
 
 .item--foto2 {
@@ -183,25 +191,24 @@ h2 {
 }
 
 .parrafo {
-    opacity: 0;
+    color: transparent;
     width: 300px;
     height: 200px;
 }
 
 
 .Nprofes__item:hover {
-    /* opacity: 0.07; */
-    background: transparent;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms ease-out;
+    -moz-transition: opacity 500ms ease-out;
+    -o-transition: opacity 500ms ease-out;
+    -ms-transition: opacity 500ms ease-out;
+    transition: opacity 500ms ease-out;
 }
 
-.parrafo:hover {
+.Nprofes p:hover {
     opacity: 1;
-
+    color: #000;
 }
 
 
