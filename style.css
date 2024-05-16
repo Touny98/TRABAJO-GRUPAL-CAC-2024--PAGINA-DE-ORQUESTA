@@ -77,15 +77,26 @@ h2 {
     /*backdrop-filter: blur(10px);*/
 }
 
+.Nprofes__item {
+    position: relative;
+    overflow: hidden;
+}
 
-.item--foto1 {
-    background-image: url(./img/NicoG.jpg);
+.Nprofes__item:hover img{
+    transform: scale(1.09);
+}
+
+
+.item--foto1 img {
+    /* background-image: url(./img/NicoG.jpg); */
     width: 300px;
     height: 200px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     background-size: cover;
     border-radius: 3%;
+    transition: 0.5s;
 }
+
 
 .item--foto2 {
     background-image: url(./img/NoeliaG.jpg);
@@ -190,13 +201,38 @@ h2 {
     border-radius: 3%;
 }
 
-.parrafo {
-    color: transparent;
+.contenido {
+    color: #fff;
     width: 300px;
-    height: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: justify;
+    transition: all 0.5s;
 }
 
+.contenido p{
+    padding: 10px 10px 7px 10px;
+}
 
+.Nprofes__item:hover .contenido{
+    top: 0;
+}
+
+/* .parrafo {
+    color: #fff;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: justify;
+} */
+
+/* 
 .Nprofes__item:hover {
     opacity: 0.07;
     -webkit-transition: opacity 500ms ease-out;
@@ -204,12 +240,12 @@ h2 {
     -o-transition: opacity 500ms ease-out;
     -ms-transition: opacity 500ms ease-out;
     transition: opacity 500ms ease-out;
-}
+} */
 
-.Nprofes p:hover {
+/* .Nprofes p:hover {
     opacity: 1;
     color: #000;
-}
+} */
 
 
 
