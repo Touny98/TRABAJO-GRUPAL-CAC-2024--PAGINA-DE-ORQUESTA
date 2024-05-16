@@ -113,12 +113,22 @@ h2 {
     margin-bottom: 50px;
 }
 .ini__fondo {
-    display: flex;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 70% 30%;
     flex-wrap: wrap;
-    width: 100%;
+    grid-template-areas: "l1 l2"
+    "l3 l3";
+
 }
 .ini__foto {
     padding: 10px;
+    width: 100%;
+    grid-area: l1;
+}
+.ini__parrafo {
+    margin-bottom: 15%;
+    grid-area: l3;   
 }
 .ini__frase {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -126,6 +136,7 @@ h2 {
     padding: 20px;
     text-align: center;
     background-color: #AD9F9A;
+    
 }
 
 
