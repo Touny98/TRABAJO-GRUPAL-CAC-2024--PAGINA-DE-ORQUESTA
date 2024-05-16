@@ -70,6 +70,7 @@ h2 {
     width: 100%;
     /* height: 100vh; */
     margin: 20px;
+    padding: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px 10px;
@@ -82,7 +83,7 @@ h2 {
     overflow: hidden;
 }
 
-.Nprofes__item:hover img{
+.Nprofes__item:hover img {
     transform: scale(1.09);
 }
 
@@ -98,43 +99,43 @@ h2 {
 }
 
 
-.item--foto2 {
+/* .item--foto2 {
     background-image: url(./img/NoeliaG.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
     margin: 0 20px;
     border-radius: 3%;
-}
+} */
 
-.item--foto3 {
+/* .item--foto3 {
     background-image: url(./img/NataliaP.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
     margin: 0 20px;
     border-radius: 3%;
-}
+} */
 
-.item--foto4 {
+/* .item--foto4 {
     background-image: url(./img/DiegoS.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
     margin: 0 20px;
     border-radius: 3%;
-}
+} */
 
-.item--foto5 {
+/* .item--foto5 {
     background-image: url(./img/UrsulaE.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
     margin: 0 20px;
     border-radius: 3%;
-}
+} */
 
-.item--foto6 {
+/* .item--foto6 {
     background-image: url(./img/TomasT.jpg);
     width: 300px;
     height: 200px;
@@ -199,7 +200,7 @@ h2 {
     background-size: cover;
     margin: 0 20px;
     border-radius: 3%;
-}
+} */
 
 .contenido {
     color: #fff;
@@ -213,11 +214,11 @@ h2 {
     transition: all 0.5s;
 }
 
-.contenido p{
+.contenido p {
     padding: 10px 10px 7px 10px;
 }
 
-.Nprofes__item:hover .contenido{
+.Nprofes__item:hover .contenido {
     top: 0;
 }
 
