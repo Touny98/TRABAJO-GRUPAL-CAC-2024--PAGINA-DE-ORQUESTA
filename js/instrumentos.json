@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "nombre": "Flauta traversa",
+        "tipo": "viento"
+    },
+    {
+        "id":2,
+        "nombre": "Oboe",
+        "tipo": "viento"
+    },
+    {
+        "id": 3,
+        "nombre": "Clarinete",
+        "tipo": "viento"
+    },
+    {
+        "id": 4,
+        "nombre": "Corno",
+        "tipo": "viento"
+    },
+    {
+        "id":5,
+        "nombre": "Trompeta",
+        "tipo": "viento"
+    },
+    {
+        "id": 6,
+        "nombre": "Trombón",
+        "tipo": "viento"
+    },
+    {
+        "id": 7,
+        "nombre": "Bateria",
+        "tipo": "percusión"
+    },
+    {
+        "id": 8,
+        "nombre": "Xilofón",
+        "tipo": "percusión"
+    },
+    {
+        "id": 9,
+        "nombre": "glockenspiel",
+        "tipo": "percusión"
+    },
+    {
+        "id": 10,
+        "nombre": "",
+        "tipo": ""
+    },
+    {
+        "id": 11,
+        "nombre": "",
+        "tipo": ""
+    }
+
+]

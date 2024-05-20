@@ -6,6 +6,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin: 50px; */
 }
 
 .logonavbar {
@@ -16,37 +17,48 @@ body {
 }
 
 
-.fondo {
+.Norquesta {
     background-color: #212529;
+    /* width: 100vw; */
+    /* position: relative; */
+}
+
+.Nfondo {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    /* margin: 20px; */
+    justify-content: space-between;
+}
 
+#Nfondo__imagen {
+    width: 96%;
+    max-width: 960px;
+    padding-top: 50px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.imgConcierto {
+    width: 100%;
+    height: auto;
 
 }
 
-#foto-conciento {
-    padding: 50px 0;
-    /* border-radius: 50%; */
-    margin: auto;
-    /* width: 300px;
-    height: 300px; */
-
-
-}
-
-#texto-fondo {
+#Nfondo__text {
     color: #ffc;
     font-size: 20px;
-    width: 50%;
-    padding-top: 5%;
-    padding-left: 5%;
-    margin: 0%;
+    padding: 10px;
     text-align: justify;
 }
 
 
 .staff {
     position: relative;
+    background-color: #AD9F9A;
+    padding: 0 20px 50px 0;
 }
 
 h2 {
@@ -54,52 +66,188 @@ h2 {
     padding: 0;
 }
 
-.profes {
+.Nprofes {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-
+    width: 100%;
+    /* height: 100vh; */
+    margin: 20px;
+    padding: 20px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #AD9F9A;
+    justify-content: space-between;
+    gap: 10px 10px;
+
     /*backdrop-filter: blur(10px);*/
 }
 
-.relleno {
-    background-image: url(./img/NicoG.jpg);
-    width: 300px;
-    height: 200px;
-    width: 300px;
-    background-size: cover;
-
+.Nprofes__item {
+    position: relative;
+    overflow: hidden;
 }
 
-.relleno2 {
+.Nprofes__item:hover img {
+    transform: scale(1.09);
+}
+
+
+.item--foto1 img {
+    /* background-image: url(./img/NicoG.jpg); */
+    width: 300px;
+    height: 200px;
+    /* margin: 0 20px; */
+    background-size: cover;
+    border-radius: 3%;
+    transition: 0.5s;
+}
+
+
+/* .item--foto2 {
     background-image: url(./img/NoeliaG.jpg);
     width: 300px;
     height: 200px;
     background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+} */
+
+/* .item--foto3 {
+    background-image: url(./img/NataliaP.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+} */
+
+/* .item--foto4 {
+    background-image: url(./img/DiegoS.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+} */
+
+/* .item--foto5 {
+    background-image: url(./img/UrsulaE.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+} */
+
+/* .item--foto6 {
+    background-image: url(./img/TomasT.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
 }
 
-.parrafo {
-    opacity: 0;
+.item--foto7 {
+    background-image: url(./img/MateoD.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+
 }
 
+.item--foto8 {
+    background-image: url(./img/MartinS.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
 
-.relleno:hover {
-    /* opacity: 0.07; */
-    background: transparent;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
 }
 
-.parrafo:hover {
+.item--foto9 {
+    background-image: url(./img/NoeliaGa.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+
+}
+
+.item--foto10 {
+    background-image: url(./img/NaaraG.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+
+}
+
+.item--foto11 {
+    background-image: url(./img/SebastianP.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+}
+
+.item--foto12 {
+    background-image: url(./img/IvanS.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 20px;
+    border-radius: 3%;
+} */
+
+.contenido {
+    color: #fff;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: justify;
+    transition: all 0.5s;
+}
+
+.contenido p {
+    padding: 10px 10px 7px 10px;
+}
+
+.Nprofes__item:hover .contenido {
+    top: 0;
+}
+
+/* .parrafo {
+    color: #fff;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: justify;
+} */
+
+/* 
+.Nprofes__item:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms ease-out;
+    -moz-transition: opacity 500ms ease-out;
+    -o-transition: opacity 500ms ease-out;
+    -ms-transition: opacity 500ms ease-out;
+    transition: opacity 500ms ease-out;
+} */
+
+/* .Nprofes p:hover {
     opacity: 1;
-
-}
+    color: #000;
+} */
 
 
 
@@ -196,6 +344,9 @@ footer {
                 #DEE0E0 Blanco
                 #AD9F9A Lila
                 
+<<<<<<< HEAD
+                */
+=======
                 */
 
 /* @media (min-width: 1024px) 
@@ -235,3 +386,4 @@ footer {
 
 
     */
+>>>>>>> main
