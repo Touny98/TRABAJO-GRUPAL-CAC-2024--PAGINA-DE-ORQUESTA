@@ -11,7 +11,8 @@ body {
 
 .logonavbar {
     height: 50px;
-    width: 65px;
+    width: 50px;
+    margin: 5px;
 
 }
 
@@ -299,6 +300,7 @@ h2 {
     gap: 40px;
     margin-top: 20px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .eventos_container ul li {
@@ -338,4 +340,46 @@ footer {
                 #DEE0E0 Blanco
                 #AD9F9A Lila
                 
+<<<<<<< HEAD
                 */
+=======
+                */
+
+/* @media (min-width: 1024px) 
+@media (min-width: 768px)
+@media (min-width: 576px)*/
+
+/*
+  ............{
+    display: flex;
+    flex-direction: row; }
+  ............... {
+    display: flex;
+    flex-direction: column; 
+
+    /*FORMULARIO
+
+      <form class="contacto-container">
+        <div>CONTACTANOS</div>
+        <label for="nombre">
+          <span> NOMBRE </span>
+          <input type="text" id="nombre" placeholder="Escribí tu nombre" />
+        </label>
+        <label for="email">
+          <span> CORREO </span>
+          <input type="email" id="correo" placeholder="Escribí tu correo" />
+        </label>
+        <label for="asunto">
+          <span> ASUNTO </span>
+          <input type="text" id="asunto" placeholder="Asunto" />
+        </label>
+        <label for="mensaje">
+          <span> MENSAJE </span>
+          <input type="text" id="mensaje" placeholder="Mensaje" />
+        </label>
+      </form>
+
+
+
+    */
+>>>>>>> main
