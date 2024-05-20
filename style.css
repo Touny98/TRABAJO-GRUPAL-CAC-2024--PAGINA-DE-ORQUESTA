@@ -181,8 +181,12 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-
-}
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "icons";
+  align-items: center;
+  justify-items: center; }
 
 /*COLORES A USAR
                 #E66F18 Naranja
