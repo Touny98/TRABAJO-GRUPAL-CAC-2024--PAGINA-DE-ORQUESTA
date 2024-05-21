@@ -273,23 +273,49 @@ h2 {
     grid-area: main;
     ;
 }
+#calendar-days {
+    width: 100px;
+    margin: 10px;
+}
+#calendar-days :hover {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 .eventos_container {
     grid-area: a2;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
-.eventos_container h1,
-h2 {
+.eventos_container h1, h2 {
     color: #E66F18;
+    transition: 0.5s;
+}
+.eventos_container h1:hover, h2:hover {
+ transform: scale(1.1);
 }
 
 .eventos_container p {
     color: #1e1e1e;
+    padding: 10px;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -299,27 +325,35 @@ h2 {
     font-weight: 600;
     gap: 40px;
     margin-top: 20px;
-    flex-wrap: wrap;
     margin-bottom: 100px;
+
 }
 
 .eventos_container ul li {
     color: #1e1e1e;
+    transition: 0.5s;
 }
 
 .eventos_container ul li:hover {
-    color: #E66F18
+    color: #E66F18;
+    transform:scale(1.1)
 }
 
 .evento {
-    max-width: 30%;
+   width: 33%;
 }
 
-.evento>img {
+.evento img {
     max-width: 100%;
     margin-top: 20px;
 }
 
+
+@media (max-width: 768px) {
+ #calendar-days{
+    width: 200px;
+ }
+    }
 
 footer {
     background-color: #182BAD;
@@ -334,7 +368,18 @@ footer {
   grid-template-columns: 100%;
   grid-template-areas: "icons";
   align-items: center;
-  justify-items: center; }
+  justify-items: center; 
+  }
+
+#ig :hover {
+    transform: scale(1.1);
+}
+#fb :hover {
+    transform: scale(1.1);
+}
+#mail :hover {
+    transform: scale(1.1);
+}
 
 /*COLORES A USAR
                 #E66F18 Naranja
@@ -361,29 +406,4 @@ footer {
     display: flex;
     flex-direction: column; 
 
-    /*FORMULARIO
-
-      <form class="contacto-container">
-        <div>CONTACTANOS</div>
-        <label for="nombre">
-          <span> NOMBRE </span>
-          <input type="text" id="nombre" placeholder="Escribí tu nombre" />
-        </label>
-        <label for="email">
-          <span> CORREO </span>
-          <input type="email" id="correo" placeholder="Escribí tu correo" />
-        </label>
-        <label for="asunto">
-          <span> ASUNTO </span>
-          <input type="text" id="asunto" placeholder="Asunto" />
-        </label>
-        <label for="mensaje">
-          <span> MENSAJE </span>
-          <input type="text" id="mensaje" placeholder="Mensaje" />
-        </label>
-      </form>
-
-
-
-    */
 >>>>>>> main
