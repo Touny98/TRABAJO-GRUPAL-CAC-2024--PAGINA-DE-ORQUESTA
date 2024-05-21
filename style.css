@@ -1,110 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* margin: 50px; */
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 50px; */
 }
 
 .logonavbar {
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-
+  height: 50px;
+  width: 50px;
+  margin: 5px;
 }
 
-
 .Norquesta {
-    background-color: #212529;
-    /* width: 100vw; */
-    /* position: relative; */
+  background-color: #212529;
+  /* width: 100vw; */
+  /* position: relative; */
 }
 
 .Nfondo {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 40px 20px 20px 20px;
-    /* margin: 20px; */
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  /* margin: 20px; */
+  justify-content: space-between;
 }
 
 #Nfondo__imagen {
-    width: 96%;
-    max-width: 960px;
-    padding-top: 50px;
-    border-radius: 20px 20px 20px 20px;
-    margin: 0 auto;
-    background-size: cover;
+  width: 96%;
+  max-width: 960px;
+  padding-top: 50px;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0 auto;
+  background-size: cover;
 }
 
 .imgConcierto {
-    width: 100%;
-    height: auto;
-
+  width: 100%;
+  height: auto;
 }
 
 #Nfondo__text {
-    color: #ffc;
-    font-size: 20px;
-    padding: 10px;
-    text-align: justify;
+  color: #ffc;
+  font-size: 20px;
+  padding: 10px;
+  text-align: justify;
 }
-
 
 .staff {
-    position: relative;
-    background-color: #AD9F9A;
-    padding: 0 20px 50px 0;
+  position: relative;
+  background-color: #ad9f9a;
+  padding: 0 20px 50px 0;
 }
 h1 {
-    margin: 0;
-    padding: 0;
-    color: #E66F18;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: #e66f18;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h2 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .Nprofes {
-    display: flex;
-    width: 100%;
-    /* height: 100vh; */
-    margin: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px 10px;
+  display: flex;
+  width: 100%;
+  /* height: 100vh; */
+  margin: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 10px;
 
-    /*backdrop-filter: blur(10px);*/
+  /*backdrop-filter: blur(10px);*/
 }
 
 .Nprofes__item {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .Nprofes__item:hover img {
-    transform: scale(1.09);
+  transform: scale(1.09);
 }
-
 
 .item--foto1 img {
-    /* background-image: url(./img/NicoG.jpg); */
-    width: 300px;
-    height: 200px;
-    /* margin: 0 20px; */
-    background-size: cover;
-    border-radius: 3%;
-    transition: 0.5s;
+  /* background-image: url(./img/NicoG.jpg); */
+  width: 300px;
+  height: 200px;
+  /* margin: 0 20px; */
+  background-size: cover;
+  border-radius: 3%;
+  transition: 0.5s;
 }
-
 
 /* .item--foto2 {
     background-image: url(./img/NoeliaG.jpg);
@@ -210,23 +204,23 @@ h2 {
 } */
 
 .contenido {
-    color: #fff;
-    width: 300px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    position: absolute;
-    top: -100%;
-    left: 0;
-    text-align: justify;
-    transition: all 0.5s;
+  color: #fff;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  text-align: justify;
+  transition: all 0.5s;
 }
 
 .contenido p {
-    padding: 10px 10px 7px 10px;
+  padding: 10px 10px 7px 10px;
 }
 
 .Nprofes__item:hover .contenido {
-    top: 0;
+  top: 0;
 }
 
 /* .parrafo {
@@ -255,181 +249,174 @@ h2 {
     color: #000;
 } */
 
-
-
 .mt {
-    margin-top: 100px;
-    margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .ini__fondo {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 70% 30%;
-    flex-wrap: wrap;
-    grid-template-areas: "l1 l2"
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 70% 30%;
+  flex-wrap: wrap;
+  grid-template-areas:
+    "l1 l2"
     "l3 l3";
-
 }
 .titulo {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 .ini__foto {
-    padding: 10px;
-    width: 100%;
-    grid-area: l1;
+  padding: 10px;
+  width: 100%;
+  grid-area: l1;
 }
 .ini__parrafo {
-    margin-bottom: 15%;
-    grid-area: l3;   
+  margin-bottom: 15%;
+  grid-area: l3;
 }
 .ini__frase {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    background-color: #AD9F9A;
-    
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ad9f9a;
 }
 
-
 .eventos_page {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 .invisible_container {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows: 100%;
-    grid-template-areas: "a1 a2 a3";
-    grid-area: main;
-    ;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: 100%;
+  grid-template-areas: "a1 a2 a3";
+  grid-area: main;
 }
 #calendar-days {
-    width: 100px;
-    margin: 10px;
+  width: 100px;
+  margin: 10px;
 }
 #calendar-days :hover {
-    animation-duration: 3s;
-    animation-name: slidein;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  from {
+    margin-left: 100%;
+    width: 300%;
   }
 
-.eventos_container {
-    grid-area: a2;
+  to {
+    margin-left: 0%;
     width: 100%;
-    display: flex;
-   flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
+  }
 }
 
-.eventos_container h1, h2 {
-    color: #E66F18;
-    transition: 0.5s;
+.eventos_container {
+  grid-area: a2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
-.eventos_container h1:hover, h2:hover {
- transform: scale(1.1);
+
+.eventos_container h1,
+h2 {
+  color: #e66f18;
+  transition: 0.5s;
+}
+.eventos_container h1:hover,
+h2:hover {
+  transform: scale(1.1);
 }
 
 .eventos_container p {
-    color: #1e1e1e;
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+  color: #1e1e1e;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .eventos_container ul {
-    display: flex;
-    list-style-type: none;
-    font-weight: 600;
-    gap: 40px;
-    margin-top: 20px;
-    margin-bottom: 100px;
-
+  display: flex;
+  list-style-type: none;
+  font-weight: 600;
+  gap: 40px;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .eventos_container ul li {
-    color: #1e1e1e;
-    transition: 0.5s;
+  color: #1e1e1e;
+  transition: 0.5s;
 }
 
 .eventos_container ul li:hover {
-    color: #E66F18;
-    transform:scale(1.1)
+  color: #e66f18;
+  transform: scale(1.1);
 }
 
 .evento {
-   width: 33%;
+  width: 33%;
 }
 
 .evento img {
-    max-width: 100%;
-    margin-top: 20px;
+  max-width: 100%;
+  margin-top: 20px;
 }
-
 
 @media (max-width: 768px) {
- #calendar-days{
+  #calendar-days {
     width: 200px;
- }
-
-    }
-.form-container h1{
-    margin-top: 150px;
-    text-align: center;
-    justify-content: center;
+  }
 }
-.formulario{
-    display: flex;
-    padding: 10px;
+.form-container h1 {
+  margin-top: 150px;
+  text-align: center;
+  justify-content: center;
+}
+.formulario {
+  display: flex;
+  padding: 10px;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 footer {
-    background-color: #182BAD;
-    color: #DEE0E0;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+  background-color: #182bad;
+  color: #dee0e0;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   grid-area: footer;
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: "icons";
   align-items: center;
-  justify-items: center; 
-  }
+  justify-items: center;
+}
 
 #ig :hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 #fb :hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 #mail :hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 /*COLORES A USAR
                 #E66F18 Naranja
