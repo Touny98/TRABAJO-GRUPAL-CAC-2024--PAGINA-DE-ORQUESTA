@@ -15,56 +15,66 @@
         "id": 3,
         "nombre": "Clarinete",
         "tipo": "viento",
-        "imagen":
+        "imagen": "https://e7.pngegg.com/pngimages/515/322/png-clipart-wave-key-clarinet-product-kind-clarinet-thumbnail.png"
     },
     {
         "id": 4,
         "nombre": "Corno",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "https://e7.pngegg.com/pngimages/564/964/png-clipart-holton-farkas-french-horns-brass-instruments-musical-instruments-french-horn-brass-instrument-alto-horn-thumbnail.png"
     },
     {
         "id": 5,
         "nombre": "Trompeta",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "https://e7.pngegg.com/pngimages/678/828/png-clipart-trumpet-wind-instrument-musical-instruments-trombone-trumpet-brass-instrument-violin.png"
     },
     {
         "id": 6,
         "nombre": "Trombón",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "https://w7.pngwing.com/pngs/823/34/png-transparent-trombone-musical-instrument-trombone-brass-instrument-badger-trombon-musical-instruments-thumbnail.png"
     },
     {
         "id": 7,
         "nombre": "Bateria",
-        "tipo": "percusión"
+        "tipo": "percusión",
+        "imagen": "https://e7.pngegg.com/pngimages/593/603/png-clipart-drums-musical-instrument-illustration-music-drums-music-note-silhouette.png"
     },
     {
         "id": 8,
         "nombre": "Xilofón",
-        "tipo": "percusión"
+        "tipo": "percusión",
+        "imagen": "https://w7.pngwing.com/pngs/961/309/png-transparent-metallophone-xylophone-musical-instruments-xylophone-desktop-wallpaper-rhythm-bayonet-thumbnail.png"
     },
     {
         "id": 9,
         "nombre": "glockenspiel",
-        "tipo": "percusión"
+        "tipo": "percusión",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuPMf7dVi8Bj95wn_51UA93cdpTLr96Le0g&usqp=CAU"
     },
     {
         "id": 10,
         "nombre": "Violín",
-        "tipo": "cuerda"
+        "tipo": "cuerda",
+        "imagen": "https://png.pngtree.com/png-clipart/20210620/original/pngtree-three-dimensional-violin-png-image_6444393.jpg"
     },
     {
         "id": 11,
         "nombre": "Viola",
-        "tipo": "cuerda"
+        "tipo": "cuerda",
+        "imagen": "https://e7.pngegg.com/pngimages/50/879/png-clipart-violin-viola-double-bass-violin-thumbnail.png"
     },
     {
         "id": 12,
         "nombre": "Violoncello",
-        "tipo": "cuerda"
+        "tipo": "cuerda",
+        "imagen": "https://e7.pngegg.com/pngimages/691/814/png-clipart-brown-cello-cello-brown-thumbnail.png"
     },
     {
         "id": 11,
         "nombre": "Contrabajo",
-        "tipo": "cuerda"
+        "tipo": "cuerda",
+        "imagen": "https://w7.pngwing.com/pngs/614/949/png-transparent-violone-double-bass-bass-violin-viola-bass-guitar-bass-guitar-double-bass-bow-violin-thumbnail.png"
     }
 ]
