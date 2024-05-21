@@ -56,6 +56,7 @@ body {
   background-color: #ad9f9a;
   padding: 0 20px 50px 0;
 }
+
 h1 {
   margin: 0;
   padding: 0;
@@ -100,108 +101,6 @@ h2 {
   transition: 0.5s;
 }
 
-/* .item--foto2 {
-    background-image: url(./img/NoeliaG.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-} */
-
-/* .item--foto3 {
-    background-image: url(./img/NataliaP.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-} */
-
-/* .item--foto4 {
-    background-image: url(./img/DiegoS.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-} */
-
-/* .item--foto5 {
-    background-image: url(./img/UrsulaE.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-} */
-
-/* .item--foto6 {
-    background-image: url(./img/TomasT.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-}
-
-.item--foto7 {
-    background-image: url(./img/MateoD.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-
-}
-
-.item--foto8 {
-    background-image: url(./img/MartinS.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-
-}
-
-.item--foto9 {
-    background-image: url(./img/NoeliaGa.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-
-}
-
-.item--foto10 {
-    background-image: url(./img/NaaraG.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-
-}
-
-.item--foto11 {
-    background-image: url(./img/SebastianP.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-}
-
-.item--foto12 {
-    background-image: url(./img/IvanS.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
-    margin: 0 20px;
-    border-radius: 3%;
-} */
 
 .contenido {
   color: #fff;
@@ -217,6 +116,11 @@ h2 {
 
 .contenido p {
   padding: 10px 10px 7px 10px;
+  font-size: 1em;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style:normal;
 }
 
 .Nprofes__item:hover .contenido {
@@ -234,25 +138,12 @@ h2 {
     text-align: justify;
 } */
 
-/* 
-.Nprofes__item:hover {
-    opacity: 0.07;
-    -webkit-transition: opacity 500ms ease-out;
-    -moz-transition: opacity 500ms ease-out;
-    -o-transition: opacity 500ms ease-out;
-    -ms-transition: opacity 500ms ease-out;
-    transition: opacity 500ms ease-out;
-} */
-
-/* .Nprofes p:hover {
-    opacity: 1;
-    color: #000;
-} */
 
 .mt {
   margin-top: 100px;
   margin-bottom: 50px;
 }
+
 .ini__fondo {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -262,18 +153,22 @@ h2 {
     "l1 l2"
     "l3 l3";
 }
+
 .titulo {
   padding-left: 10px;
 }
+
 .ini__foto {
   padding: 10px;
   width: 100%;
   grid-area: l1;
 }
+
 .ini__parrafo {
   margin-bottom: 15%;
   grid-area: l3;
 }
+
 .ini__frase {
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 100%;
@@ -299,14 +194,17 @@ h2 {
   grid-template-areas: "a1 a2 a3";
   grid-area: main;
 }
+
 #calendar-days {
   width: 100px;
   margin: 10px;
 }
+
 #calendar-days :hover {
   animation-duration: 3s;
   animation-name: slidein;
 }
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -335,6 +233,7 @@ h2 {
   color: #e66f18;
   transition: 0.5s;
 }
+
 .eventos_container h1:hover,
 h2:hover {
   transform: scale(1.1);
@@ -380,11 +279,13 @@ h2:hover {
     width: 200px;
   }
 }
+
 .form-container h1 {
   margin-top: 150px;
   text-align: center;
   justify-content: center;
 }
+
 .formulario {
   display: flex;
   padding: 10px;
@@ -392,6 +293,7 @@ h2:hover {
   align-items: center;
   text-align: center;
 }
+
 footer {
   background-color: #182bad;
   color: #dee0e0;
@@ -411,9 +313,11 @@ footer {
 #ig :hover {
   transform: scale(1.1);
 }
+
 #fb :hover {
   transform: scale(1.1);
 }
+
 #mail :hover {
   transform: scale(1.1);
 }
