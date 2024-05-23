@@ -50,8 +50,10 @@
               <div v-for="instrumentos in datos" class="tarjetaInstrumentos">
                 <div class="cuerpoInstrumentos">
                   <img width="200" height="200" :src="instrumentos.imagen" alt="instrumentos.nombre">
-                  <p>{{instrumentos.nombre}}</p>
-                  <p>{{instrumentos.tipo}}</p>
+                  <div class="textInstrumentos">
+                    <p>nombre: {{instrumentos.nombre}}</p>
+                    <p>{{instrumentos.tipo}}</p>
+                  </div>
                 </div>
 
               </div>

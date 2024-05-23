@@ -16,9 +16,10 @@ body {
 }
 
 .Norquesta {
-  background-color: #212529;
+  /* background-color: #212529; */
   /* width: 100vw; */
   /* position: relative; */
+  background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
 }
 
 .Nfondo {
@@ -33,7 +34,7 @@ body {
 #Nfondo__imagen {
   width: 96%;
   max-width: 960px;
-  padding-top: 50px;
+  padding-top: 70px;
   border-radius: 20px 20px 20px 20px;
   margin: 0 auto;
   background-size: cover;
@@ -42,6 +43,7 @@ body {
 .imgConcierto {
   width: 100%;
   height: auto;
+  filter: drop-shadow(0px 0px 10px #222);
 }
 
 #Nfondo__text {
@@ -53,7 +55,8 @@ body {
 
 .staff {
   position: relative;
-  background-color: #ad9f9a;
+  /* background-color: #ad9f9a; */
+  background-color: rgba(207, 207, 205);
   padding: 0 20px 50px 0;
 }
 
@@ -64,6 +67,12 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.staff h1 {
+  padding: 1.5%;
+  margin: auto;
+  text-align: center;
+}
+
 h2 {
   margin: 0;
   padding: 0;
@@ -72,14 +81,11 @@ h2 {
 .Nprofes {
   display: flex;
   width: 100%;
-  /* height: 100vh; */
-  margin: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 40px;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   gap: 10px 10px;
-
-  /*backdrop-filter: blur(10px);*/
 }
 
 .Nprofes__item {
@@ -92,7 +98,6 @@ h2 {
 }
 
 .item--foto1 img {
-  /* background-image: url(./img/NicoG.jpg); */
   width: 300px;
   height: 200px;
   /* margin: 0 20px; */
@@ -119,24 +124,13 @@ h2 {
   font-size: 1em;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
-  font-weight:600;
-  font-style:normal;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .Nprofes__item:hover .contenido {
   top: 0;
 }
-
-/* .parrafo {
-    color: #fff;
-    width: 300px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: justify;
-} */
 
 
 .mt {
@@ -165,7 +159,8 @@ h2 {
 }
 
 .ini__parrafo {
-  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   grid-area: l3;
 }
 
@@ -175,6 +170,32 @@ h2 {
   padding: 20px;
   text-align: center;
   background-color: #ad9f9a;
+}
+
+
+.conteinerInstrumentos {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+
+.cuerpoInstrumentos {
+  border: 2px solid #111;
+  width: 200px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cuerpoInstrumentos img {
+  background-size: contain;
+}
+
+.textInstrumentos {
+  padding: 0px;
+  margin: 0;
 }
 
 .eventos_page {
