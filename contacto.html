@@ -12,6 +12,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -60,35 +63,28 @@
       </div>
     </header>
 
-    <main>
-      <section class="form-container">
-        <h1>CONTACTANOS</h1>
-        <form class="formulario">
-          <label for="nombre">
-            <span> NOMBRE: </span>
-            <br />
-            <input type="text" id="nombre" placeholder="Escribí tu nombre" />
-          </label>
-          <br />
-          <label for="email">
-            <span> CORREO: </span>
-            <br />
-            <input type="email" id="correo" placeholder="Escribí tu correo" />
-          </label>
-          <br />
-          <label for="asunto">
-            <span> ASUNTO: </span>
-            <br />
-            <input type="text" id="asunto" placeholder="Asunto" />
-          </label>
-          <br />
-          <label for="mensaje"> MENSAJE: </label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
-          <br />
-        </form>
-      </section>
+    <main class="mainForm">
+      <form action="" method="POST" id="form">
+        <div class="form">
+          <h1 class="formTitulo">REGISTRO</h1>
+          <div class="grupo">
+            <input type="text" name="" id="name"><span class="Barra"></span>
+            <label for="">Nombre</label>
+          </div>
+          <div class="grupo">
+            <input type="email" name="" id="email"><span class="Barra"></span>
+            <label for="">Email</label>
+          </div>
+          <div class="grupo">
+            <input type="password" name="" id="password"><span class="Barra"></span>
+            <label for="">Password</label>
+          </div>
+          <button type="submit" class="buttonForm">Registrate</button>
+          <p class="warnings" id="warnings"></p>
+        </div>
+      </form>
     </main>
-
+    
     <footer class="fixed-bottom">
       <section class="icons">
         <a
@@ -96,7 +92,7 @@
           href="https://www.instagram.com/orquestaindependencia/"
           target="”_blank"
           ><img src="./img/icons/ig.png" alt=""
-        /></a>
+          /></a>
         <a
           id="fb"
           href="https://www.facebook.com/orquestaindependencia33"
@@ -113,5 +109,34 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
+
+    <!-- <section class="form-container">
+      <h1>CONTACTANOS</h1>
+      <form class="formulario">
+        <label for="nombre">
+          <span> NOMBRE: </span>
+          <br />
+          <input type="text" id="nombre" placeholder="Escribí tu nombre" />
+        </label>
+        <br />
+        <label for="email">
+          <span> CORREO: </span>
+          <br />
+          <input type="email" id="correo" placeholder="Escribí tu correo" />
+        </label>
+        <br />
+        <label for="asunto">
+          <span> ASUNTO: </span>
+          <br />
+          <input type="text" id="asunto" placeholder="Asunto" />
+        </label>
+        <br />
+        <label for="mensaje"> MENSAJE: </label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+        <br />
+      </form>
+    </section> -->

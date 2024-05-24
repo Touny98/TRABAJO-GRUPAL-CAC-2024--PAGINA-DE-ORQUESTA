@@ -16,9 +16,6 @@ body {
 }
 
 .Norquesta {
-  /* background-color: #212529; */
-  /* width: 100vw; */
-  /* position: relative; */
   background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
 }
 
@@ -27,7 +24,6 @@ body {
   flex-wrap: wrap;
   width: 100%;
   padding: 40px 20px 20px 20px;
-  /* margin: 20px; */
   justify-content: space-between;
 }
 
@@ -68,6 +64,9 @@ h1 {
 }
 
 .staff h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   padding: 1.5%;
   margin: auto;
   text-align: center;
@@ -121,10 +120,11 @@ h2 {
 
 .contenido p {
   padding: 10px 10px 7px 10px;
-  font-size: 1em;
-  font-family: "Caveat", cursive;
+  font-size: 0.9em;
+  /* font-family: "Caveat", cursive; */
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -159,9 +159,9 @@ h2 {
 }
 
 .ini__parrafo {
-  margin-top: 10%;
-  margin-bottom: 5%;
-  grid-area: l3;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  /* grid-area: l3; */
 }
 
 .ini__frase {
@@ -176,27 +176,27 @@ h2 {
 .conteinerInstrumentos {
   display: flex;
   flex-flow: row wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: space-evenly;
+  padding: 10px 40px 100px 40px;
+  position: relative;
 }
 
+.cuerpoInstrumentos img {
+  background-size: cover;
+}
 
-.cuerpoInstrumentos {
+.tarjetaInstrumentos {
   border: 2px solid #111;
   width: 200px;
-  height: 280px;
   position: relative;
   overflow: hidden;
 }
 
-.cuerpoInstrumentos img {
-  background-size: contain;
-}
+.cuerpoInstrumentos {}
 
-.textInstrumentos {
-  padding: 0px;
-  margin: 0;
-}
+
+
 
 .eventos_page {
   display: grid;
@@ -301,7 +301,122 @@ h2:hover {
   }
 }
 
-.form-container h1 {
+.mainForm {
+  background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+form {
+  background: #fff;
+  padding: 20px 0 20px 0;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 100px 0 30px 0;
+}
+
+
+.form h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+form .grupo {
+  position: relative;
+  margin: 45px;
+}
+
+input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(207, 207, 205);
+}
+
+input:focus {
+  outline: none;
+  color: rgb(94, 93, 93);
+}
+
+label {
+  color: #E66F18;
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+  top: -14px;
+  font-size: 12px;
+  color: #f3b283;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #e66f18;
+  padding-top: 20px;
+}
+
+.buttonForm {
+  font-family: 'roboto';
+  background: linear-gradient(to right, #E66F18, rgba(207, 207, 205));
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}
+
+/* .barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #212529, rgba(207, 207, 205));
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+input:focus~.barra::before{
+  width: 100%;
+} */
+
+
+
+/* .form-container h1 {
   margin-top: 150px;
   text-align: center;
   justify-content: center;
@@ -313,7 +428,7 @@ h2:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
+} */
 
 footer {
   background-color: #182bad;
