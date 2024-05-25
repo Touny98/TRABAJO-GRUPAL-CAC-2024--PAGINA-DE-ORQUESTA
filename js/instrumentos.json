@@ -3,78 +3,78 @@
         "id": 1,
         "nombre": "Flauta traversa",
         "tipo": "viento",
-        "imagen": "https://png.pngtree.com/png-vector/20201129/ourmid/pngtree-flute-png-image_2395626.jpg"
+        "imagen": "./img/instrumentos/flauta.jpg"
     },
     {
         "id": 2,
         "nombre": "Oboe",
         "tipo": "viento",
-        "imagen": "https://w7.pngwing.com/pngs/973/485/png-transparent-woodwind-instrument-clarinet-oboe-musical-instruments-trumpet-and-saxophone-musician-saxophone-piccolo.png"
+        "imagen": "./img/instrumentos/oboe.jpg"
     },
     {
         "id": 3,
         "nombre": "Clarinete",
         "tipo": "viento",
-        "imagen": "https://e7.pngegg.com/pngimages/515/322/png-clipart-wave-key-clarinet-product-kind-clarinet-thumbnail.png"
+        "imagen": "./img/instrumentos/clarinete.jpg"
     },
     {
         "id": 4,
         "nombre": "Corno",
         "tipo": "viento",
-        "imagen": "https://e7.pngegg.com/pngimages/564/964/png-clipart-holton-farkas-french-horns-brass-instruments-musical-instruments-french-horn-brass-instrument-alto-horn-thumbnail.png"
+        "imagen": "./img/instrumentos/corno.jpg"
     },
     {
         "id": 5,
         "nombre": "Trompeta",
         "tipo": "viento",
-        "imagen": "https://e7.pngegg.com/pngimages/678/828/png-clipart-trumpet-wind-instrument-musical-instruments-trombone-trumpet-brass-instrument-violin.png"
+        "imagen": "./img/instrumentos/trompeta.jpg"
     },
     {
         "id": 6,
         "nombre": "Trombón",
         "tipo": "viento",
-        "imagen": "https://w7.pngwing.com/pngs/823/34/png-transparent-trombone-musical-instrument-trombone-brass-instrument-badger-trombon-musical-instruments-thumbnail.png"
+        "imagen": "./img/instrumentos/trombon.jpg"
     },
     {
         "id": 7,
         "nombre": "Bateria",
         "tipo": "percusión",
-        "imagen": "https://e7.pngegg.com/pngimages/593/603/png-clipart-drums-musical-instrument-illustration-music-drums-music-note-silhouette.png"
+        "imagen": "./img/instrumentos/bateria.jpeg"
     },
     {
         "id": 8,
         "nombre": "Xilofón",
         "tipo": "percusión",
-        "imagen": "https://w7.pngwing.com/pngs/961/309/png-transparent-metallophone-xylophone-musical-instruments-xylophone-desktop-wallpaper-rhythm-bayonet-thumbnail.png"
+        "imagen": "./img/instrumentos/xilofon.jpg"
     },
     {
         "id": 9,
         "nombre": "glockenspiel",
         "tipo": "percusión",
-        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXuPMf7dVi8Bj95wn_51UA93cdpTLr96Le0g&usqp=CAU"
+        "imagen": "./img/instrumentos/glockenspiel.jpg"
     },
     {
         "id": 10,
         "nombre": "Violín",
         "tipo": "cuerda",
-        "imagen": "https://png.pngtree.com/png-clipart/20210620/original/pngtree-three-dimensional-violin-png-image_6444393.jpg"
+        "imagen": "./img/instrumentos/violin.jpg"
     },
     {
         "id": 11,
         "nombre": "Viola",
         "tipo": "cuerda",
-        "imagen": "https://e7.pngegg.com/pngimages/50/879/png-clipart-violin-viola-double-bass-violin-thumbnail.png"
+        "imagen": "./img/instrumentos/viola.jpg"
     },
     {
         "id": 12,
         "nombre": "Violoncello",
         "tipo": "cuerda",
-        "imagen": "https://e7.pngegg.com/pngimages/691/814/png-clipart-brown-cello-cello-brown-thumbnail.png"
+        "imagen": "./img/instrumentos/violonchelo.jpg"
     },
     {
         "id": 11,
         "nombre": "Contrabajo",
         "tipo": "cuerda",
-        "imagen": "https://w7.pngwing.com/pngs/614/949/png-transparent-violone-double-bass-bass-violin-viola-bass-guitar-bass-guitar-double-bass-bow-violin-thumbnail.png"
+        "imagen": "./img/instrumentos/contrabajo.jpg"
     }
 ]
