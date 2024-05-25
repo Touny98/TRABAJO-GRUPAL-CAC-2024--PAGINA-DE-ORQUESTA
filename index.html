@@ -37,30 +37,57 @@
     </header>
 
     <main>
-        <section class="mt"></section><section class="mt">
+        <section class="mt"></section>
           <div class="titulo">
           <h1>Orquesta Independencia 33</h1>
           </div>
           <div class="ini__fondo"> 
-            <img class="ini__foto" src="./img/contrabajo.dedos.jpg"></div>
-            <div class="ini__parrafo">
-
-            <p class="ini__frase">"La mano es la ternura cuando sale a saludar al viajero y a la gente desde el borde del camino, la mano es justicia cuando acaricia al perro y es un perro cuando baja la espalda; la mano es la música del brazo, la voluntad debajo de la frente..." Hamlet Lima Quintana.</p>
+            <img class="ini__foto" src="./img/contrabajo.dedos.jpg">
           </div>
+          <div class="ini__parrafo">
+              <p class="ini__frase">"La mano es la ternura cuando sale a saludar al viajero y a la gente desde el borde del camino, la mano es justicia cuando acaricia al perro y es un perro cuando baja la espalda; la mano es la música del brazo, la voluntad debajo de la frente..." Hamlet Lima Quintana.</p>
           </div>
+          <div id="app">
+            <!-- <p>{{datos}}</p> -->
+            <div class="conteinerInstrumentos">
+              <div v-for="instrumentos in datos" class="tarjetaInstrumentos">
+                <div class="cuerpoInstrumentos">
+                  <div class="imgInstrumentos">
+                    <img width="200" height="200" :src="instrumentos.imagen" alt="instrumentos.nombre">
+                  </div>
+                  <div class="textInstrumentos">
+                    <p>nombre: {{instrumentos.nombre}}</p>
+                    <p>Tipo: {{instrumentos.tipo}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
           
-        </section>
+
     </main>
 
     <footer class="fixed-bottom">
       <section class="icons">
+<<<<<<< HEAD
         <a href="https://www.instagram.com/orquestaindependencia/" target="”_blank"><img src="./img/icons/ig.png" alt="" /></a>
         <a href="https://www.facebook.com/orquestaindependencia33" target="”_blank"><img src="./img/icons/fb.png" alt="" /></a>
         <a href="./contacto.html"><img src="./img/icons/mail.png" alt="" /></a>
       </section>
         <p>Derechos de autor &copy; 2024 Programa CyO Bonaerenses</p>
+=======
+        <a id="ig" href="https://www.instagram.com/orquestaindependencia/" target="”_blank"><img src="./img/icons/ig.png" alt="" /></a>
+        <a id="fb" href="https://www.facebook.com/orquestaindependencia33" target="”_blank"><img src="./img/icons/fb.png" alt="" /></a>
+        <a id="mail" href="./contacto.html"><img src="./img/icons/mail.png" alt="" /></a>
+      </section>
+>>>>>>> main
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+    <script src="./js/instrumentos.js"></script>
+
 </body>
 </html>
 

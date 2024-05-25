@@ -1,58 +1,80 @@
 [
     {
-        "id":1,
+        "id": 1,
         "nombre": "Flauta traversa",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "./img/instrumentos/flauta.jpg"
     },
     {
-        "id":2,
+        "id": 2,
         "nombre": "Oboe",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "./img/instrumentos/oboe.jpg"
     },
     {
         "id": 3,
         "nombre": "Clarinete",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "./img/instrumentos/clarinete.jpg"
     },
     {
         "id": 4,
         "nombre": "Corno",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "./img/instrumentos/corno.jpg"
     },
     {
-        "id":5,
+        "id": 5,
         "nombre": "Trompeta",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "./img/instrumentos/trompeta.jpg"
     },
     {
         "id": 6,
         "nombre": "Trombón",
-        "tipo": "viento"
+        "tipo": "viento",
+        "imagen": "./img/instrumentos/trombon.jpg"
     },
     {
         "id": 7,
         "nombre": "Bateria",
-        "tipo": "percusión"
+        "tipo": "percusión",
+        "imagen": "./img/instrumentos/bateria.jpeg"
     },
     {
         "id": 8,
         "nombre": "Xilofón",
-        "tipo": "percusión"
+        "tipo": "percusión",
+        "imagen": "./img/instrumentos/xilofon.jpg"
     },
     {
         "id": 9,
         "nombre": "glockenspiel",
-        "tipo": "percusión"
+        "tipo": "percusión",
+        "imagen": "./img/instrumentos/glockenspiel.jpg"
     },
     {
         "id": 10,
-        "nombre": "",
-        "tipo": ""
+        "nombre": "Violín",
+        "tipo": "cuerda",
+        "imagen": "./img/instrumentos/violin.jpg"
     },
     {
         "id": 11,
-        "nombre": "",
-        "tipo": ""
+        "nombre": "Viola",
+        "tipo": "cuerda",
+        "imagen": "./img/instrumentos/viola.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Violoncello",
+        "tipo": "cuerda",
+        "imagen": "./img/instrumentos/violonchelo.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Contrabajo",
+        "tipo": "cuerda",
+        "imagen": "./img/instrumentos/contrabajo.jpg"
     }
-
 ]
