@@ -138,38 +138,56 @@ h2 {
   margin-bottom: 50px;
 }
 
-.ini__fondo {
+.ini__contenedor {
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 70% 30%;
-  flex-wrap: wrap;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
   grid-template-areas:
-    "l1 l2"
-    "l3 l3";
+  "l1 l2"
+  "l1 l3";
+  position: relative;
 }
 
 .titulo {
-  padding-left: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 1%;
 }
 
 .ini__foto {
   padding: 10px;
-  width: 100%;
+  width: 70%;
   grid-area: l1;
+  margin-left: 50px;
 }
 
 .ini__parrafo {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  /* grid-area: l3; */
+  /*position: absolute;*/
+  grid-area: l2;
+  padding: 10px;
+  width: 400px;
+  margin-right: 20px;
+  left: -120px;
 }
+
+.ini__banner{
+ /* position: absolute;*/
+ /* top: 10px;*/
+  margin-right: 300px;
+ /* left: -120px;*/
+  padding: 10px;
+  grid-area: l3;
+  width: 100%;
+  margin-right: 20px;
+}
+
 
 .ini__frase {
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 100%;
   padding: 20px;
   text-align: center;
-  background-color: #ad9f9a;
+  background-color: #fff;
 }
 
 
