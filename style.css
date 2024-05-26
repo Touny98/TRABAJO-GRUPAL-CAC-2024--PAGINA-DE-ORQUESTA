@@ -264,7 +264,7 @@ h2:hover {
   color: #1e1e1e;
   padding: 10px;
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Georgia";
 }
 
 .eventos_container ul {
@@ -320,7 +320,7 @@ form {
 
 
 .form h1 {
-  font-family: "Roboto", sans-serif;
+  font-family:"Georgia";
   font-weight: 700;
   font-style: normal;
   text-align: center;
