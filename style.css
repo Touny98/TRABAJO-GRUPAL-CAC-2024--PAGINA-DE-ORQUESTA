@@ -137,52 +137,62 @@ h2 {
 .mt {
   margin-top: 100px;
   margin-bottom: 50px;
-  
-}
 
-.ini__contenedor {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-    "l1 l2"
-    "l1 l3";
-  position: relative;
 }
-
 .titulo {
   margin: auto;
   text-align: center;
   padding: 1%;
 }
 
-.ini__foto {
-  padding: 10px;
-  width: 70%;
-  grid-area: l1;
-  margin-left: 50px;
+.ini__contenedor {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+    "l1 l2"
+    "l1 l3";
 }
 
+@media (max-width: 768px) {
+    .ini__contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "l1"
+        "l2"
+        "l3"
+      }
+    }
+
+.ini__foto {
+  display: flex;
+  padding: 40px;
+  width: 100%;
+  grid-area: l1;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+
 .ini__parrafo {
-  /*position: absolute;*/
+  display: flex;
   grid-area: l2;
   padding: 10px;
-  width: 400px;
   margin-right: 20px;
+  margin-top: 20px;
   left: -120px;
+  justify-content:center; 
 }
 
 .ini__banner {
-  /* position: absolute;*/
-  /* top: 10px;*/
-  margin-right: 300px;
-  /* left: -120px;*/
-  padding: 10px;
+  display: flex;
+  justify-content: center;
   grid-area: l3;
-  width: 100%;
-  margin-right: 20px;
+  padding: 40px;
 }
-
 
 .ini__frase {
   font-family: Georgia, "Times New Roman", Times, serif;
