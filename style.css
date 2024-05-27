@@ -123,7 +123,7 @@ h2 {
   padding: 10px 10px 7px 10px;
   font-size: 0.9em;
   /* font-family: "Caveat", cursive; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -211,9 +211,6 @@ h2 {
   position: relative;
   overflow: hidden;
 }
-
-.cuerpoInstrumentos {}
-
 
 
 
@@ -339,12 +336,9 @@ form {
 
 
 .form h1 {
-<<<<<<< HEAD
   font-family: "Georgia", sans-serif;
-=======
-  font-family: "Roboto", sans-serif;
   color: #E66F18;
->>>>>>> 7e4cf6c99a96aa40b2d45382f2ab8634fe79d051
+
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -405,7 +399,7 @@ input:valid~label {
 }
 
 .buttonForm {
-  font-family: 'roboto';
+  font-family: 'Georgia';
   background: linear-gradient(to right, #E66F18, rgba(207, 207, 205));
   border: none;
   display: block;
