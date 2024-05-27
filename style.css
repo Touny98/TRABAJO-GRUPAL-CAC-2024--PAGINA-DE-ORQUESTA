@@ -322,10 +322,10 @@ h2:hover {
 .mainForm {
   background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
   height: 100vh;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 }
 
 form {
@@ -338,7 +338,7 @@ form {
 
 
 .form h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-align: center;
