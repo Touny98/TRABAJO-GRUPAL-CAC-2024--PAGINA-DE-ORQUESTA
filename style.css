@@ -137,7 +137,7 @@ h2 {
   padding: 10px 10px 7px 10px;
   font-size: 0.9em;
   /* font-family: "Caveat", cursive; */
-  font-family: "Roboto", sans-serif;
+  font-family: "Georgia", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -151,6 +151,7 @@ h2 {
 .mt {
   margin-top: 100px;
   margin-bottom: 50px;
+  
 }
 
 .ini__contenedor {
@@ -225,9 +226,6 @@ h2 {
   position: relative;
   overflow: hidden;
 }
-
-.cuerpoInstrumentos {}
-
 
 
 
@@ -337,10 +335,10 @@ h2:hover {
 .mainForm {
   background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
   height: 100vh;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 }
 
 form {
@@ -354,10 +352,20 @@ form {
 
 .form h1 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-family:"Georgia";
 =======
   font-family: "Roboto", sans-serif;
   color: #E66F18;
+>>>>>>> main
+=======
+  font-family: "Georgia", sans-serif;
+  color: #E66F18;
+
+=======
+  font-family: "Roboto", sans-serif;
+  color: #E66F18;
+>>>>>>> 88290fc2014f8b842f11916baedab9b313de4f5a
 >>>>>>> main
   font-weight: 700;
   font-style: normal;
@@ -419,7 +427,7 @@ input:valid~label {
 }
 
 .buttonForm {
-  font-family: 'roboto';
+  font-family: 'Georgia';
   background: linear-gradient(to right, #E66F18, rgba(207, 207, 205));
   border: none;
   display: block;
