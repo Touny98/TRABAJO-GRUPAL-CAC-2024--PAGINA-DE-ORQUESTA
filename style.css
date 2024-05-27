@@ -137,6 +137,7 @@ h2 {
 .mt {
   margin-top: 100px;
   margin-bottom: 50px;
+  
 }
 
 .ini__contenedor {
@@ -336,9 +337,14 @@ form {
 
 
 .form h1 {
+<<<<<<< HEAD
   font-family: "Georgia", sans-serif;
   color: #E66F18;
 
+=======
+  font-family: "Roboto", sans-serif;
+  color: #E66F18;
+>>>>>>> 88290fc2014f8b842f11916baedab9b313de4f5a
   font-weight: 700;
   font-style: normal;
   text-align: center;
