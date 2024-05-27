@@ -32,7 +32,6 @@ body {
   width: 96%;
   max-width: 960px;
   padding-top: 70px;
-  border-radius: 20px 20px 20px 20px;
   margin: 0 auto;
   background-size: cover;
 }
@@ -41,22 +40,28 @@ body {
   width: 100%;
   height: auto;
   filter: drop-shadow(0px 0px 10px #222);
+  border-radius: 20px 20px 20px 20px;
 }
 
 #Nfondo__text {
-  color: #ffc;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  color: #fff;
   font-size: 20px;
-  padding: 10px;
+  padding: 30px 10px 10px 10px;
   text-align: justify;
+  font-style: italic;
 }
 
 .staff {
   position: relative;
   /* background-color: #ad9f9a; */
   background-color: rgba(207, 207, 205);
-  padding: 0 20px 50px 0;
+  padding: 0 0 50px 0;
 }
 
+<<<<<<< HEAD
 h1 {
   margin: 0;
   padding: 0;
@@ -67,6 +72,12 @@ h1 {
 
 .staff h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
+=======
+
+.staff h1 {
+  color: #e66f18;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> main
   font-weight: 500;
   font-style: normal;
   padding: 1.5%;
@@ -94,14 +105,16 @@ h2 {
   overflow: hidden;
 }
 
+
+
 .Nprofes__item:hover img {
   transform: scale(1.09);
 }
 
+
 .item--foto1 img {
   width: 300px;
   height: 200px;
-  /* margin: 0 20px; */
   background-size: cover;
   border-radius: 3%;
   transition: 0.5s;
@@ -140,38 +153,56 @@ h2 {
   margin-bottom: 50px;
 }
 
-.ini__fondo {
+.ini__contenedor {
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 70% 30%;
-  flex-wrap: wrap;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
   grid-template-areas:
     "l1 l2"
-    "l3 l3";
+    "l1 l3";
+  position: relative;
 }
 
 .titulo {
-  padding-left: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 1%;
 }
 
 .ini__foto {
   padding: 10px;
-  width: 100%;
+  width: 70%;
   grid-area: l1;
+  margin-left: 50px;
 }
 
 .ini__parrafo {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  /* grid-area: l3; */
+  /*position: absolute;*/
+  grid-area: l2;
+  padding: 10px;
+  width: 400px;
+  margin-right: 20px;
+  left: -120px;
 }
+
+.ini__banner {
+  /* position: absolute;*/
+  /* top: 10px;*/
+  margin-right: 300px;
+  /* left: -120px;*/
+  padding: 10px;
+  grid-area: l3;
+  width: 100%;
+  margin-right: 20px;
+}
+
 
 .ini__frase {
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 100%;
   padding: 20px;
   text-align: center;
-  background-color: #ad9f9a;
+  background-color: #fff;
 }
 
 
@@ -322,7 +353,12 @@ form {
 
 
 .form h1 {
+<<<<<<< HEAD
   font-family:"Georgia";
+=======
+  font-family: "Roboto", sans-serif;
+  color: #E66F18;
+>>>>>>> main
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -374,7 +410,7 @@ input:valid~label {
   width: 100%;
 }
 
-.warnings{
+.warnings {
   width: 200px;
   text-align: center;
   margin: auto;
@@ -401,36 +437,6 @@ input:valid~label {
   }
 }
 
-/* .barra::before {
-  content: "";
-  height: 2px;
-  width: 0%;
-  bottom: 0;
-  position: absolute;
-  background: linear-gradient(to right, #212529, rgba(207, 207, 205));
-  transition: 0.3s ease width;
-  left: 0;
-}
-
-input:focus~.barra::before{
-  width: 100%;
-} */
-
-
-
-/* .form-container h1 {
-  margin-top: 150px;
-  text-align: center;
-  justify-content: center;
-}
-
-.formulario {
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-} */
 
 footer {
   background-color: #182bad;
