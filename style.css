@@ -140,17 +140,6 @@ h2 {
 
 }
 
-.main_inicio{
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "t1"
-  "t2"
-  "t3";
-}
 
 .titulo {
   grid-area: t1;
@@ -168,7 +157,6 @@ h2 {
   grid-template-areas:
     "l1 l2"
     "l1 l3";
-    grid-area: t2;
 }
 
 @media (max-width: 768px) {
@@ -267,7 +255,7 @@ h2 {
   width: 100px;
   margin: 10px;
 }
-
+/*
 #calendar-days :hover {
   animation-duration: 3s;
   animation-name: slidein;
@@ -284,7 +272,7 @@ h2 {
     width: 100%;
   }
 }
-
+*/
 .eventos_container {
   grid-area: a2;
   width: 100%;
