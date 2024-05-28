@@ -123,7 +123,12 @@ h2 {
 .contenido p {
   padding: 10px 10px 7px 10px;
   font-size: 0.9em;
+<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
+=======
+  /* font-family: "Caveat", cursive; */
+  font-family: "Georgia", sans-serif;
+>>>>>>> main
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -137,51 +142,96 @@ h2 {
 .mt {
   margin-top: 100px;
   margin-bottom: 50px;
+
 }
 
-.ini__contenedor {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-    "l1 l2"
-    "l1 l3";
-  position: relative;
-}
 
 .titulo {
   margin: auto;
   text-align: center;
+  justify-content: center;
   padding: 1%;
+  animation-duration: 1.2s;
+  animation-name: slidein ;
 }
 
+  
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.ini__contenedor {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+    "l1 l2"
+    "l1 l3";
+}
+
+@media (max-width: 999px) {
+    .ini__contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "l1"
+        "l2"
+        "l3"
+      }
+    }
+
+
 .ini__foto {
-  padding: 10px;
-  width: 70%;
+  display: flex;
+  padding: 40px;
+  width: 100%;
   grid-area: l1;
   margin-left: 50px;
+  justify-content: center;
+  transition: transform 2s ease;
+
+}
+
+.ini__foto :hover {
+  transform: scale(1.1);
 }
 
 .ini__parrafo {
-  /*position: absolute;*/
+  display: flex;
   grid-area: l2;
-  padding: 10px;
-  width: 400px;
+  padding: 20px;
   margin-right: 20px;
+  margin-top: 20px;
   left: -120px;
+  justify-content:center; 
+  transition: transform 2s ease;
+}
+
+.ini__parrafo :hover {
+  transform: scale(1.1);
 }
 
 .ini__banner {
-  /* position: absolute;*/
-  /* top: 10px;*/
-  margin-right: 300px;
-  /* left: -120px;*/
-  padding: 10px;
+  display: flex;
+  justify-content: center;
   grid-area: l3;
-  width: 100%;
-  margin-right: 20px;
+  padding: 40px;
+  transition: transform 2s ease;
 }
 
+.ini__banner :hover {
+  transform: scale(1.1);
+}
 
 .ini__frase {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -191,14 +241,18 @@ h2 {
   background-color: #fff;
 }
 
-
+.jsonInstrumentos {
+  grid-area: t3;
+  display: flex;
+  justify-content: center;
+}
 .conteinerInstrumentos {
   display: flex;
   flex-flow: row wrap;
   gap: 10px;
   justify-content: space-evenly;
   padding: 10px 40px 100px 40px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .cuerpoInstrumentos img {
@@ -208,7 +262,7 @@ h2 {
 .tarjetaInstrumentos {
   border: 2px solid #111;
   width: 200px;
-  position: relative;
+ position: relative;
   overflow: hidden;
 }
 
@@ -232,16 +286,47 @@ h2 {
   grid-area: main;
 }
 
-#calendar-days {
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+.calendar-days {
   width: 100px;
   margin: 10px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+
 }
 
-#calendar-days :hover {
-  animation-duration: 3s;
-  animation-name: slidein;
+.calendar-days :hover {
+  transform: scale(1.1);
 }
 
+.eventos_container {
+  grid-area: a2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.eventos_container h1,
+h2 {
+  color: #e66f18;
+  animation-duration: 2s;
+  animation-name: slidein ;
+}
+
+  
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -254,27 +339,6 @@ h2 {
   }
 }
 
-.eventos_container {
-  grid-area: a2;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.eventos_container h1,
-h2 {
-  color: #e66f18;
-  transition: 0.5s;
-}
-
-.eventos_container h1:hover,
-h2:hover {
-  transform: scale(1.1);
-}
 
 .eventos_container p {
   color: #1e1e1e;
@@ -286,24 +350,25 @@ h2:hover {
 .eventos_container ul {
   display: flex;
   list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   font-weight: 600;
-  gap: 40px;
+  gap: 20px;
+  padding: 20px;
   margin-top: 20px;
   margin-bottom: 100px;
+  flex: 1;
 }
 
 .eventos_container ul li {
   color: #1e1e1e;
-  transition: 0.5s;
-}
 
-.eventos_container ul li:hover {
-  color: #e66f18;
-  transform: scale(1.1);
 }
 
 .evento {
   width: 33%;
+
 }
 
 .evento img {
@@ -311,24 +376,48 @@ h2:hover {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  #calendar-days {
-    width: 200px;
-  }
+.evento :hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 
+<<<<<<< HEAD
 .bcontact {
   position: relative;
   /* background: linear-gradient(to bottom, #212529, rgba(207, 207, 205)); */
   min-height: 100vh;
+=======
+
+.mainForm {
+  background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
+  height: 100vh;
+  padding-bottom: 5%;
+>>>>>>> main
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 form {
+<<<<<<< HEAD
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px; */
+=======
+  background: #fff;
+  padding: 20px 0 20px 0;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 150px 0 0 0;
+}
+
+
+.form h1 {
+  font-family: "Georgia", sans-serif;
+  color: #E66F18;
+
+  font-weight: 700;
+  font-style: normal;
+>>>>>>> main
   text-align: center;
   width: 440px;
   padding: 70px 0 70px 0;
@@ -367,6 +456,41 @@ input, textarea {
   outline: none;
 }
 
+<<<<<<< HEAD
+=======
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.warnings {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #e66f18;
+  padding-top: 20px;
+}
+
+.buttonForm {
+  font-family: 'Georgia';
+  background: linear-gradient(to right, #E66F18, rgba(207, 207, 205));
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}
+>>>>>>> main
 
 
 footer {
@@ -375,7 +499,11 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
+<<<<<<< HEAD
   position:fixed;
+=======
+  position: absolute;
+>>>>>>> main
   bottom: 0;
   grid-area: footer;
   display: grid;
