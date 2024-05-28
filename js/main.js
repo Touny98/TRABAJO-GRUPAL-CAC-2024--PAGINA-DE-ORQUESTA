@@ -1,7 +1,7 @@
 const nombre = document.getElementById("name")
-const apellido = document.getElementById("apellido")
+const tel = document.getElementById("phone")
 const email = document.getElementById("email")
-const dni = document.getElementById("dni")
+const text = document.getElementById("message")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
@@ -13,14 +13,9 @@ form.addEventListener("submit", e => {
     parrafo.innerHTML = ""
 
     if (nombre.value.length < 2) {
-        warnings += `EL nombre debe contener al menos 2 siglas <br>`
+        warnings += `Debe contener al menos 2 letras <br>`
         entrar = true
     }
-
-    // if (apellido.value.length < 2) {
-    //     warnings += `EL apellido debe contener al menos 2 siglas <br>`
-    //     entrar = true
-    // }
 
     console.log(regexEmail.test(email.value))
     if (!regexEmail.test(email.value)) {
@@ -28,8 +23,13 @@ form.addEventListener("submit", e => {
         entrar = true
     }
 
-    if (dni.value.length < 7) {
-        warnings += `DNI incorrecto. Debe tener mas de 7 digitos <br>`
+    if (tel.value.length < 7) {
+        warnings += `Debe tener mas de 7 digitos <br>`
+        entrar = true
+    }
+
+    if (text.value.length > 100) {
+        warnings += `Supera máximo de 100 caracteres <br>`
         entrar = true
     }
 

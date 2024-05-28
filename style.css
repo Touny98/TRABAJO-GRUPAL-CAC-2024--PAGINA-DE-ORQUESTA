@@ -123,12 +123,8 @@ h2 {
 .contenido p {
   padding: 10px 10px 7px 10px;
   font-size: 0.9em;
-<<<<<<< HEAD
-  font-family: "Roboto", sans-serif;
-=======
   /* font-family: "Caveat", cursive; */
   font-family: "Georgia", sans-serif;
->>>>>>> main
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -152,10 +148,10 @@ h2 {
   justify-content: center;
   padding: 1%;
   animation-duration: 1.2s;
-  animation-name: slidein ;
+  animation-name: slidein;
 }
 
-  
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -180,15 +176,15 @@ h2 {
 }
 
 @media (max-width: 999px) {
-    .ini__contenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "l1"
-        "l2"
-        "l3"
-      }
-    }
+  .ini__contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "l1"
+      "l2"
+      "l3"
+  }
+}
 
 
 .ini__foto {
@@ -213,7 +209,7 @@ h2 {
   margin-right: 20px;
   margin-top: 20px;
   left: -120px;
-  justify-content:center; 
+  justify-content: center;
   transition: transform 2s ease;
 }
 
@@ -246,6 +242,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 .conteinerInstrumentos {
   display: flex;
   flex-flow: row wrap;
@@ -262,7 +259,7 @@ h2 {
 .tarjetaInstrumentos {
   border: 2px solid #111;
   width: 200px;
- position: relative;
+  position: relative;
   overflow: hidden;
 }
 
@@ -287,16 +284,24 @@ h2 {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
+
   40% {
-      transform: translateY(-30px);
+    transform: translateY(-30px);
   }
+
   60% {
-      transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
+
 .calendar-days {
   width: 100px;
   margin: 10px;
@@ -323,10 +328,10 @@ h2 {
 h2 {
   color: #e66f18;
   animation-duration: 2s;
-  animation-name: slidein ;
+  animation-name: slidein;
 }
 
-  
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -381,46 +386,22 @@ h2 {
   transform: scale(1.1);
 }
 
-<<<<<<< HEAD
 .bcontact {
   position: relative;
   /* background: linear-gradient(to bottom, #212529, rgba(207, 207, 205)); */
-  min-height: 100vh;
-=======
-
-.mainForm {
-  background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
-  height: 100vh;
-  padding-bottom: 5%;
->>>>>>> main
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 form {
-<<<<<<< HEAD
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px; */
-=======
-  background: #fff;
-  padding: 20px 0 20px 0;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  margin: 150px 0 0 0;
-}
-
-
-.form h1 {
-  font-family: "Georgia", sans-serif;
-  color: #E66F18;
-
-  font-weight: 700;
-  font-style: normal;
->>>>>>> main
   text-align: center;
-  width: 440px;
-  padding: 70px 0 70px 0;
+  width: 350px;
+  padding: 75px 0 70px 0;
 }
 
 .input-group {
@@ -431,67 +412,130 @@ form {
 
 form h2 {
   color: #1E1E1E;
-  font-size: 35px;
+  font-size: 25px;
+  padding-top: 10px;
+  display: inline-block;
 }
 
-.inputLabel{
-  display:contents;
+.inputLabel {
+  display: contents;
 }
 
 label {
   color: #212529;
   font-size: 15px;
   font-weight: 600;
-  margin: 10px;
+  margin: 1px;
+  margin-top: 10px;
 }
 
 
-input, textarea {
+input {
   margin: 5px;
-  padding: 5px 25px;
+  padding: 4px 25px;
   border-radius: 20px;
-  background-color: #EDFFF0;
-  border: 2px solid #F0FAF1;
+  background-color: #f8ebc2;
+  border: 2px solid #f4bf9a;
   color: #1E1E1E;
   outline: none;
 }
 
-<<<<<<< HEAD
-=======
-.barra {
-  position: relative;
-  display: block;
-  width: 100%;
+textarea {
+  margin: 5px;
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: #f8ebc2;
+  border: 2px solid #f4bf9a;
+  ;
+  color: #1E1E1E;
+  outline: none;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #a1a1a1;
+}
+
+::-webkit-scrollbar{
+  background: #f3d9a9;
+  width: 13px;
+  border-radius: 25px;
+  height: 95%;
+}
+::-webkit-scrollbar-thumb{
+   background: #ee9a11;
+   width: 15px;;
+   border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover{
+   background-color: #ca5a0b;
+}
+
+::-webkit-scrollbar-thumb:active{
+   background-color: #777;
+}
+
+.form-txt {
+  padding: 5px;
+  text-align: center;
+  font-style: italic;
+}
+
+.btnForm {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.btn {
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 25px;
+  background-color: #e66f18;
+  box-shadow: 0 0 20px #ca5a0b;
+  cursor: pointer;
+  width: 50%;
+}
+
+.btn:hover {
+  background-color: #ca5a0b;
+  color: #f8ebc2;
+}
+
+@media(max-width:991px) {
+  .bcontact {
+    padding: 30px;
+  }
+
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+
+  input {
+    padding: 8px;
+  }
+}
+
+
 .warnings {
-  width: 200px;
+  width: 100%;
   text-align: center;
   margin: auto;
   color: #e66f18;
-  padding-top: 20px;
+  padding-top: 10px;
+  margin-bottom: 15px;
 }
 
-.buttonForm {
-  font-family: 'Georgia';
-  background: linear-gradient(to right, #E66F18, rgba(207, 207, 205));
-  border: none;
-  display: block;
-  width: 80%;
-  margin: 10px auto;
-  color: #fff;
-  height: 40px;
-  font-size: 16px;
-  cursor: pointer;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@media screen and (max-width: 500px) {
-  form {
-    width: 80%;
-  }
+input[type=number] {
+  -moz-appearance: textfield;
 }
->>>>>>> main
-
 
 footer {
   background-color: #182bad;
@@ -499,11 +543,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
-<<<<<<< HEAD
-  position:fixed;
-=======
-  position: absolute;
->>>>>>> main
+  position: fixed;
   bottom: 0;
   grid-area: footer;
   display: grid;

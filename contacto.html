@@ -64,19 +64,21 @@
       </div>
     </header>
 
-    <!-- <main class="mainForm"> -->
-      <form action="" method="post">
+    <main class="mainForm">
+      <form id="form" action="https://formsubmit.co/martinrodriguezdicarlo@gmail.com" method="POST" />
 
-        <h2>Contacto</h2>
-
+        <h2>SE PARTE DE LA ORQUESTA</h2>
+        <div class="form-txt">
+          <p>Dejanos tus datos y nos contactaremos contigo</p>
+        </div>
         <div class="input-group">
           <span class="inputLabel">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Nombre">
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" name="name" id="name" placeholder="Nombre completo">
           </span>
           <span class="inputLabel">
             <label for="phone">Teléfono</label>
-            <input type="tel" name="phone" id="phone" placeholder="Teléfono">
+            <input type="number" name="phone" id="phone" placeholder="Teléfono">
           </span>
           <span class="inputLabel">
             <label for="email">Email</label>
@@ -84,11 +86,43 @@
           </span>
           <span class="inputLabel">
             <label for="message">Mensaje</label>
-            <textarea class="textarea" name="message" id="message" cols="30" rows="4" placeholder="Deje su comentario..."></textarea>
+            <textarea class="textarea" name="message" id="message" cols="30" rows="4" placeholder="Max. 100 caracteres"></textarea>
           </span>
-          
-          <input class="btn" type="submit" value="Enviar">
-    <main class="mainForm">
+          <span class="btnForm">
+            <input class="btn" type="submit" value="Enviar">
+          </span>
+          <p class="warnings" id="warnings"></p>
+        </form>
+
+        <footer class="fixed-bottom">
+          <section class="icons">
+              <a id="ig" href="https://www.instagram.com/orquestaindependencia/" target="_blank">
+                  <img src="./img/icons/ig.png" alt="Instagram" />
+              </a>
+              <a id="fb" href="https://www.facebook.com/orquestaindependencia33" target="_blank">
+                  <img src="./img/icons/fb.png" alt="Facebook" />
+              </a>
+              <a id="mail" href="./contacto.html">
+                  <img src="./img/icons/mail.png" alt="Email" />
+              </a>
+          </section>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+    <!-- <main class="mainForm">
       <form action="" method="POST" id="form">
         <div class="form">
           <h1 class="formTitulo">REGISTRO</h1>
@@ -107,21 +141,5 @@
           <button type="submit" class="buttonForm">Registrate</button>
           <p class="warnings" id="warnings"></p>
         </div>
-      </form>
-      
-    <!-- </main> -->
+      </form> -->
     
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="./js/main.js"></script>
-  </body>
-</html>
-<<<<<<< HEAD
-
-    
-=======
->>>>>>> main
