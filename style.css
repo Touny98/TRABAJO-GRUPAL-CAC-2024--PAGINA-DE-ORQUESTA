@@ -142,9 +142,9 @@ h2 {
 
 
 .titulo {
-  grid-area: t1;
   margin: auto;
   text-align: center;
+  justify-content: center;
   padding: 1%;
   animation-duration: 1.2s;
   animation-name: slidein ;
@@ -174,7 +174,7 @@ h2 {
     "l1 l3";
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     .ini__contenedor {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -183,6 +183,7 @@ h2 {
         "l2"
         "l3"
       }
+
     }
 
 
@@ -193,17 +194,26 @@ h2 {
   grid-area: l1;
   margin-left: 50px;
   justify-content: center;
+  transition: transform 2s ease;
 }
 
+.ini__foto :hover {
+  transform: scale(1.1);
+}
 
 .ini__parrafo {
   display: flex;
   grid-area: l2;
-  padding: 10px;
+  padding: 20px;
   margin-right: 20px;
   margin-top: 20px;
   left: -120px;
   justify-content:center; 
+  transition: transform 2s ease;
+}
+
+.ini__parrafo :hover {
+  transform: scale(1.1);
 }
 
 .ini__banner {
@@ -211,6 +221,11 @@ h2 {
   justify-content: center;
   grid-area: l3;
   padding: 40px;
+  transition: transform 2s ease;
+}
+
+.ini__banner :hover {
+  transform: scale(1.1);
 }
 
 .ini__frase {
@@ -330,9 +345,12 @@ h2 {
 .eventos_container ul {
   display: flex;
   list-style-type: none;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   font-weight: 600;
-  gap: 40px;
+  gap: 20px;
+  padding: 20px;
   margin-top: 20px;
   margin-bottom: 100px;
   flex: 1;
@@ -340,33 +358,12 @@ h2 {
 
 .eventos_container ul li {
   color: #1e1e1e;
-  transition: 0.5s;
 
-}
-
-.eventos_container ul li:hover {
-  color: #e66f18;
-  transform: scale(1.1);
 }
 
 .evento {
   width: 33%;
 
-}
-
-@media (max-width: 768px) {
-  .eventos_container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  }
- .evento{
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  flex: 1;
-  max-width: 100%;
- }
 }
 
 .evento img {
@@ -399,14 +396,9 @@ form {
 
 
 .form h1 {
-<<<<<<< HEAD
   font-family: "Georgia", sans-serif;
   color: #E66F18;
 
-=======
-  font-family: "Roboto", sans-serif;
-  color: #E66F18;
->>>>>>> 88290fc2014f8b842f11916baedab9b313de4f5a
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -492,7 +484,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   grid-area: footer;
   display: grid;
