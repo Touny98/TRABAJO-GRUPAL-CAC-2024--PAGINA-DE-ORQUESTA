@@ -9,10 +9,12 @@ body {
   /* margin: 50px; */
 }
 
+
 .logonavbar {
-  height: 50px;
+  position: relative;
+  height: 45px;
   width: 50px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .Norquesta {
@@ -80,7 +82,6 @@ h2 {
   display: flex;
   width: 100%;
   padding: 40px;
-  /* flex-wrap: wrap; */
   flex-flow: row wrap;
   justify-content: space-evenly;
   gap: 10px 10px;
@@ -122,7 +123,6 @@ h2 {
 .contenido p {
   padding: 10px 10px 7px 10px;
   font-size: 0.9em;
-  /* font-family: "Caveat", cursive; */
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -211,9 +211,6 @@ h2 {
   position: relative;
   overflow: hidden;
 }
-
-.cuerpoInstrumentos {}
-
 
 
 
@@ -320,104 +317,56 @@ h2:hover {
   }
 }
 
-.mainForm {
-  background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
-  height: 100vh;
-  padding-bottom: 5%;
+.bcontact {
+  position: relative;
+  /* background: linear-gradient(to bottom, #212529, rgba(207, 207, 205)); */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 form {
-  background: #fff;
-  padding: 20px 0 20px 0;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  margin: 100px 0 30px 0;
-}
-
-
-.form h1 {
-  font-family: "Roboto", sans-serif;
-  color: #E66F18;
-  font-weight: 700;
-  font-style: normal;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px; */
   text-align: center;
-  width: 100%;
-  margin: auto;
+  width: 440px;
+  padding: 70px 0 70px 0;
 }
 
-form .grupo {
-  position: relative;
-  margin: 45px;
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
-input {
-  background: none;
-  color: #c6c6c6;
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid rgba(207, 207, 205);
+form h2 {
+  color: #1E1E1E;
+  font-size: 35px;
 }
 
-input:focus {
-  outline: none;
-  color: rgb(94, 93, 93);
+.inputLabel{
+  display:contents;
 }
 
 label {
-  color: #E66F18;
-  font-size: 16px;
-  position: absolute;
-  left: 5px;
-  top: 10px;
-  transition: 0.5s ease-in-out all;
-  pointer-events: none;
+  color: #212529;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
 }
 
-input:focus~label,
-input:valid~label {
-  top: -14px;
-  font-size: 12px;
-  color: #f3b283;
+
+input, textarea {
+  margin: 5px;
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: #EDFFF0;
+  border: 2px solid #F0FAF1;
+  color: #1E1E1E;
+  outline: none;
 }
 
-.barra {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.warnings {
-  width: 200px;
-  text-align: center;
-  margin: auto;
-  color: #e66f18;
-  padding-top: 20px;
-}
-
-.buttonForm {
-  font-family: 'roboto';
-  background: linear-gradient(to right, #E66F18, rgba(207, 207, 205));
-  border: none;
-  display: block;
-  width: 80%;
-  margin: 10px auto;
-  color: #fff;
-  height: 40px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 500px) {
-  form {
-    width: 80%;
-  }
-}
 
 
 footer {
@@ -426,7 +375,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
-  position: fixed;
+  position:fixed;
   bottom: 0;
   grid-area: footer;
   display: grid;
@@ -447,6 +396,8 @@ footer {
 #mail :hover {
   transform: scale(1.1);
 }
+
+
 
 /*COLORES A USAR
                 #E66F18 Naranja

@@ -1,6 +1,7 @@
 const nombre = document.getElementById("name")
+const apellido = document.getElementById("apellido")
 const email = document.getElementById("email")
-const pass = document.getElementById("password")
+const dni = document.getElementById("dni")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
@@ -11,10 +12,15 @@ form.addEventListener("submit", e => {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
 
-    if (nombre.value.length < 6) {
-        warnings += `El nombre no es válido <br>`
+    if (nombre.value.length < 2) {
+        warnings += `EL nombre debe contener al menos 2 siglas <br>`
         entrar = true
     }
+
+    // if (apellido.value.length < 2) {
+    //     warnings += `EL apellido debe contener al menos 2 siglas <br>`
+    //     entrar = true
+    // }
 
     console.log(regexEmail.test(email.value))
     if (!regexEmail.test(email.value)) {
@@ -22,8 +28,8 @@ form.addEventListener("submit", e => {
         entrar = true
     }
 
-    if (pass.value.length < 8) {
-        warnings += `La contraseña no es válida <br>`
+    if (dni.value.length < 7) {
+        warnings += `DNI incorrecto. Debe tener mas de 7 digitos <br>`
         entrar = true
     }
 
