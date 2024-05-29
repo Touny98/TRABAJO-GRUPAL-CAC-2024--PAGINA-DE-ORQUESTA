@@ -17,8 +17,8 @@ body {
   /* margin: 5px; */
 }
 
-.Norquesta {
-  background: linear-gradient(to bottom, #212529, rgba(207, 207, 205));
+.Nmain {
+  background: linear-gradient(to top, #a0a7ae, rgb(255, 255, 255));
 }
 
 .Nfondo {
@@ -48,7 +48,7 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 20px;
-  color: #fff;
+  color: #2e2d2d;
   font-size: 20px;
   padding: 30px 10px 10px 10px;
   text-align: justify;
@@ -58,7 +58,7 @@ body {
 .staff {
   position: relative;
   /* background-color: #ad9f9a; */
-  background-color: rgba(207, 207, 205);
+  /* background-color: rgba(207, 207, 205); */
   padding: 0 0 50px 0;
 }
 
@@ -279,8 +279,6 @@ h2 {
 }
 
 .tarjetaInstrumentos {
-  /* border: 2px solid #111; */
-  /* border-radius: 15px; */
   width: 250px;
   padding: 20px;
   position: relative;
@@ -475,7 +473,7 @@ label {
   margin: 20px;
 }
 
-.radio-s:hover{
+.radio-s:hover {
   border: 2px solid #000;
   background-color: #ca5a0b;
   cursor: pointer;
