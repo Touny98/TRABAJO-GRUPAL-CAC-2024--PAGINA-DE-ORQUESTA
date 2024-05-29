@@ -436,7 +436,8 @@ form {
   border-radius: 20px; */
   text-align: center;
   width: 375px;
-  padding: 75px 0 70px 0;
+  margin-top: 30px;
+  padding: 75px 0 60px 0;
 }
 
 .input-group {
@@ -568,6 +569,12 @@ textarea:hover,
   width: 50%;
 }
 
+.btnImg {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
 .btn:hover {
   background-color: #ca5a0b;
   color: #f8ebc2;
@@ -595,7 +602,8 @@ textarea:hover,
   text-align: center;
   margin: auto;
   color: #e66f18;
-  padding-top: 10px;
+  padding-top: 5px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
