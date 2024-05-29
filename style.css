@@ -65,7 +65,7 @@ body {
 
 .staff h1 {
   color: #e66f18;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Georgia", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-style: normal;
   padding: 1.5%;
@@ -124,7 +124,7 @@ h2 {
   padding: 10px 10px 7px 10px;
   font-size: 0.9em;
   /* font-family: "Caveat", cursive; */
-  font-family: "Georgia", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -200,6 +200,11 @@ h2 {
 
 .ini__foto :hover {
   transform: scale(1.1);
+}
+
+.titulo {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #e66f18;
 }
 
 .ini__parrafo {
