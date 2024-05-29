@@ -42,7 +42,8 @@
     </header>
 
     <main>
-      <br><br><br><br>
+        <br><br><br>
+        <audio class="audio" src="./musica/Peer-Gynt-Suite-no.-1-Op.-46-I.-Morning-Mood.mp3" controls autoplay loop></audio>
         <section class="jsonInstrumentos">
             <div id="app">
                 <!-- <p>{{datos}}</p> -->
@@ -53,7 +54,7 @@
                                 <img width="200" height="200" :src="instrumentos.imagen" :alt="instrumentos.nombre">
                             </div>
                             <div class="textInstrumentos">
-                                <p>Nombre: {{instrumentos.nombre}}</p>
+                                <p>{{instrumentos.nombre}}</p>
                                 <p>Tipo: {{instrumentos.tipo}}</p>
                             </div>
                         </div>
