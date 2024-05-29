@@ -12,19 +12,26 @@ form.addEventListener("submit", e => {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
 
-    if (nombre.value.length < 2) {
-        warnings += `Debe contener al menos 2 letras <br>`
+    if (nombre.value == "") {
+        alert("Por favor, escriba su Nombre y Apellido")
         entrar = true
     }
 
+    if (email.value == "") {
+        alert("Por favor, escriba su E-mail")
+        entrar = true
+    }
     console.log(regexEmail.test(email.value))
     if (!regexEmail.test(email.value)) {
-        warnings += `El email no es válido <br>`
+        warnings += `El E-mail no es válido <br>`
         entrar = true
     }
-
-    if (tel.value.length < 7) {
-        warnings += `Debe tener mas de 7 digitos <br>`
+    if (tel.value == "") {
+        alert("Por favor, ingrese su Teléfono")
+        entrar = true
+    }
+    if (tel.value.length < 8) {
+        warnings += `Teléfono debe tener al menos 8 digitos <br>`
         entrar = true
     }
 
@@ -39,3 +46,20 @@ form.addEventListener("submit", e => {
         parrafo.innerHTML = "Enviado!"
     }
 })
+
+
+// function revisaFormulario() {
+//     objeto = document.formulario;
+//     if (objeto.name.value == "") {
+//         alert("Por favor, escriba su Nombre y Apellido")
+//         return false;
+//     } else if (objeto.phone.value == "") {
+//         alert("Por favor, escriba su Teléfono")
+//         return false;
+//     } else if (objeto.email.value == "") {
+//         alert("Por favor, escriba su E-mail")
+//         return false;
+//     } else {
+//         return true
+//     }
+// }

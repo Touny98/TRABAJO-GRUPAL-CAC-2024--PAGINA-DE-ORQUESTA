@@ -437,7 +437,7 @@ form {
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px; */
   text-align: center;
-  width: 350px;
+  width: 375px;
   padding: 75px 0 70px 0;
 }
 
@@ -448,7 +448,8 @@ form {
 }
 
 form h2 {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 500;
   padding-top: 10px;
   display: inline-block;
   color: #e66f18;
@@ -469,8 +470,19 @@ label {
   margin-top: 10px;
 }
 
+.radio {
+  pad: 15px;
+  margin: 20px;
+}
 
-input {
+.radio-s:hover{
+  border: 2px solid #000;
+  background-color: #ca5a0b;
+  cursor: pointer;
+}
+
+input,
+#formInstrumentos {
   margin: 5px;
   padding: 4px 25px;
   border-radius: 20px;
@@ -479,6 +491,7 @@ input {
   color: #1E1E1E;
   outline: none;
 }
+
 
 textarea {
   margin: 5px;
@@ -518,10 +531,27 @@ textarea::-webkit-scrollbar-thumb:active {
   background-color: #777;
 }
 
+input:hover,
+textarea:hover,
+#formInstrumentos:hover {
+  border: 2px solid #ca5a0b;
+}
+
 .form-txt {
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   font-style: italic;
+}
+
+.form-txt h3 {
+  font-size: 20px;
+  color: #7e7e7e;
+}
+
+.form-txt p {
+  margin-top: 10px;
+  padding-top: 15px 0 0 0;
+  text-align: left;
 }
 
 .btnForm {
@@ -543,6 +573,7 @@ textarea::-webkit-scrollbar-thumb:active {
 .btn:hover {
   background-color: #ca5a0b;
   color: #f8ebc2;
+  border: 1px solid #fff;
 }
 
 @media(max-width:991px) {
